@@ -1,183 +1,313 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 100%;
 }
-header{
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    background-color: #086187;
-    font-size: 13px;
+header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: #086187;
+  font-size: 13px;
 }
-.contact{
-    display: flex;
-    justify-content: space-between;
+.contact {
+  display: flex;
+  justify-content: space-between;
   padding: 5px 40px;
-    column-gap: 20px;
+  column-gap: 20px;
 }
-.login{
-    display: flex;
-    justify-content: space-between;
-    column-gap: 20px;
-    padding: 5px 40px;
+.login {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+  padding: 5px 40px;
 }
 /* ****************************************** */
-.headerpart{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 30px;
+.headerpart {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
 }
-.bdul{
-    padding-left: 40px;
+.bdul {
+  padding-left: 40px;
 }
-nav{
-
+nav {
 }
-nav ul{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding: 10px 30px;
-   
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 10px 30px;
 }
-nav ul li{
-    padding: 10px 10px;
+nav ul li {
+  padding: 10px 10px;
 }
-nav ul li a{
-    text-decoration: none;
-    color: black;
-text-transform: capitalize;
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
 }
 /* *************************************************** */
-.animation{
-    height: 400px;
-    width: 100%;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    color: rgb(103, 158, 231);
-    background-image: url('https://semonegna.com/wp-content/uploads/2018/03/ILA.jpeg');
-    background-size: cover;
-    animation: slider 10s infinite;
-    
+.animation {
+  height: 400px;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(103, 158, 231);
+  background-image: url("https://semonegna.com/wp-content/uploads/2018/03/ILA.jpeg");
+  background-size: cover;
+  animation: slider 10s infinite;
 }
-@keyframes slider{
-    0%{
-        background-image: url('https://semonegna.com/wp-content/uploads/2018/03/ILA.jpeg');
-    }
-    20%{
-        background-image: url('https://www.riskreductionafrica.org/wp-content/uploads/2014/09/BDU-BUILDING-e1432289124530.jpg')
-    }
-      40%{
-        background-image: url('https://www.bdu.edu.et/sites/default/files/2024-08/photo_5837107494864928868_y.jpg')
-    }
-      60%{
-        background-image: url('https://www.bdu.edu.et/sites/default/files/2024-08/photo_2024-08-06_14-54-59.jpg')
-    }
-     80%{
-        background-image: url('https://www.bdu.edu.et/fece/sites/default/files/2025-01/_u6a1986_6.jpg')
-
-     }
-     100%{
-        background-image: url('https://www.bdu.edu.et/eitex/sites/default/files/2024-08/20j_4060.jpg')
+@keyframes slider {
+  0% {
+    background-image: url("https://semonegna.com/wp-content/uploads/2018/03/ILA.jpeg");
+  }
+  20% {
+    background-image: url("https://www.riskreductionafrica.org/wp-content/uploads/2014/09/BDU-BUILDING-e1432289124530.jpg");
+  }
+  40% {
+    background-image: url("https://www.bdu.edu.et/sites/default/files/2024-08/photo_5837107494864928868_y.jpg");
+  }
+  60% {
+    background-image: url("https://www.bdu.edu.et/sites/default/files/2024-08/photo_2024-08-06_14-54-59.jpg");
+  }
+  80% {
+    background-image: url("https://www.bdu.edu.et/fece/sites/default/files/2025-01/_u6a1986_6.jpg");
+  }
+  100% {
+    background-image: url("https://www.bdu.edu.et/eitex/sites/default/files/2024-08/20j_4060.jpg");
+  }
 }
+.animation .animation-txt :nth-child(1) {
+  animation: both fadeText 0s infinite;
 }
-.animation .animation-txt :nth-child(1){
- animation: both fadeText 0s infinite;
+.animation .animation-txt :nth-child(2) {
+  animation: both fadeText 3s infinite;
 }
-.animation .animation-txt :nth-child(2){
-    animation: both fadeText 3s infinite;
+.animation .animation-txt :nth-child(3) {
+  animation: both fadeText 6s infinite;
 }
-.animation .animation-txt :nth-child(3){
-     animation: both fadeText 6s infinite;
-    }
-.animation .animation-txt :nth-child(4){
-    animation: both fadeText 8s infinite;
+.animation .animation-txt :nth-child(4) {
+  animation: both fadeText 8s infinite;
 }
-.animation .animation-txt :nth-child(5){
-     animation: both fadeText 10s infinite;; 
+.animation .animation-txt :nth-child(5) {
+  animation: both fadeText 10s infinite;
 }
- @keyframes fadeText {
-            0% { opacity: 0; transform: translateY(20px); }
-            20% { opacity: 1; transform: translateY(0); }
-            40% { opacity: 1; transform: translateY(0); }
-         60% { opacity: 0; transform: translateY(-20px); }
-            80% { opacity: 0; }
- }
- .about-bdu{
-    display: flex;
+@keyframes fadeText {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  80% {
+    opacity: 0;
+  }
+}
+.about-bdu {
+  display: flex;
   padding-left: 80px;
   padding-right: 00px;
- }
- .text{
-       width: 50%;
-       padding: 20px;
- }
- .text h1{
-     font-size: 40px;
-     font-weight: bold;
- }
- .text p{
-     font-size: 17px;
-     margin-bottom: 20px;
- }
- .text button{
-     padding: 10px 20px;
-     background-color: #0734d4;
-     color: white;
-     border: none;
-     border-radius: 5px;
-     font-size: 15px;
-     font-weight: normal;
-     text-align: center;
- }
- /* ******************************************************** */
- .acadamics{
-        display: flex;
-        justify-content: space-between;
-        padding: 20px 80px;
-        background-color:whitesmoke;
-        padding-top: 100px;
-        margin-top: 100px;
-     padding:100px 50px;
- }
- .acadamics .acadamics-txt{
-     width: 20%;
-     padding: 80px;
- }
- .acadamics .acadamics-txt h1{
-     font-size: 30px;
-     font-weight: bold;
- }
- .acadamics .acadamics-txt p{
-     font-size: 17px;
-     margin-bottom: 20px;
-     font-weight: normal;
- }
- .acadamics i{
-     font-size: 30px;
-     
- }
- .scoralsheep,.resurch-pyublication,.liberare{
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     padding: 20px;
-     border: 1px solid #cdcdcf ;
-     border-top: none;
-     border-radius: 2px;
-    
-     
- }
- .scoralsheep{
-    border-left: none;
- }
- .liberare{
-   border-right:none; 
- }
- .resurch-scholarsheep{
-    padding-top: 70px;
- }
+}
+.text {
+  width: 50%;
+  padding: 20px;
+  transition: 0.5s;
+}
+.text :hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+.image {
+  width: 50%;
+  padding: 20px;
+}
+.image :hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+.text h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.text p {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+.text button {
+  padding: 10px 20px;
+  background-color: #0734d4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
+}
+/* ******************************************************** */
+.acadamics {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: whitesmoke;
+  padding-top: 100px;
+  margin-top: 100px;
+  padding: 100px 50px;
+}
+.acadamics .acadamics-txt {
+  width: 20%;
+  padding: 80px;
+  color: rgb(79, 77, 77);
+}
+.acadamics .acadamics-txt h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.acadamics .acadamics-txt p {
+  font-size: 17px;
+  margin-bottom: 20px;
+  font-weight: normal;
+  color: rgb(79, 77, 77);
+}
+.acadamics i {
+  font-size: 30px;
+}
+.scoralsheep,
+.resurch-pyublication,
+.liberare {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #cdcdcf;
+  border-top: none;
+  border-radius: 2px;
+}
+.scoralsheep {
+  border-left: none;
+}
+.liberare {
+  border-right: none;
+}
+.resurch-scholarsheep {
+  padding-top: 70px;
+}
+/* ****************************************************** */
+.current-students {
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-evenly;
+  background-color: white;
+  padding-top: 100px;
+  margin: auto;
+  padding: 100px 20px;
+}
+.current-students i {
+  font-size: 100px;
+  color: rgb(24, 114, 174);
+}
+.progeram,
+.student,
+.staff,
+.alumni {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: 0.5s;
+}
+.progeram,
+.student,
+.staff,
+.alumni h1,
+p {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+.progeram,
+.student,
+.staff,
+.alumni :hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+/* ***************************************** */
+.vedio {
+  margin-bottom: 100px;
+}
+/* **************************************************** */
+.campases{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: whitesmoke;
+    padding-top: 100px;
+    margin-top: 100px;
+    padding: 100px 50px;
+    transition: 0.5s;
+}
+table {
+  width: 100%;
+  border: collapse 400px;
+  margin: 20px 0;
+  column-gap: 20px;
+  row-gap: 20px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transform: scale3d(1, 1, 1);
+  z-index: 1;
+
+  
+}
+table tr td {
+  padding-bottom: 30px;
+  padding: 20px;
+}
+.one1 {
+  height: 200px;
+  width: 45%;
+}
+.two1 {
+  height: 200px;
+  width: 20%;
+}
+.three1 {
+  height: 200px;
+  width: 35%;
+}
+.one2 {
+  height: 200px;
+  width: 20%;
+}
+.two2 {
+  height: 200px;
+  width: 25%;
+}
+.three2 {
+  height: 200px;
+  width: 25%;
+}
+.four2 {
+  height: 200px;
+  width: 30%;
+}
+ table tr td :hover{
+    background-color: blue;
+}
